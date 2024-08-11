@@ -2,6 +2,8 @@
 
 The AI-Powered QOTD (Question of the Day) Image Generator is a Next.js application that allows users to create customized, visually appealing images for daily questions. This tool is perfect for educators, content creators, and social media managers who want to engage their audience with thought-provoking questions presented in an attractive format.
 
+![UI](public/screenshot.png)
+
 ## Features
 
 - Custom question and answer input
