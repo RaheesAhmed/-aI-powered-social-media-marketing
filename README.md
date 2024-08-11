@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered QOTD Image Generator
 
-## Getting Started
+The AI-Powered QOTD (Question of the Day) Image Generator is a Next.js application that allows users to create customized, visually appealing images for daily questions. This tool is perfect for educators, content creators, and social media managers who want to engage their audience with thought-provoking questions presented in an attractive format.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Custom question and answer input
+- Color customization for background, text, accent, and border
+- Platform-specific image generation (Instagram, Facebook, Twitter)
+- Live preview of the generated image
+- Responsive design for desktop and mobile use
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Prerequisites
 
-## Learn More
+Before you begin, ensure you have the following installed:
+- Node.js (version 14 or later)
+- npm (usually comes with Node.js)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+   ```
+   git clone https://github.com/RaheesAhmed/-aI-powered-social-media-marketing.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
+   ```
+   cd aI-powered-social-media-marketing
+   ```
 
-## Deploy on Vercel
+3. Install the dependencies:
+   ```
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Running the Application
+
+1. Start the development server:
+   ```
+   npm run dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:3000/qotd`.
+
+## Usage
+
+1. Select a date for your question.
+2. Choose the target platform (Instagram, Facebook, or Twitter).
+3. Customize the colors for background, text, accent, and border.
+4. Enter your question and answer choices.
+5. Preview the image in real-time as you make changes.
+6. Click "Generate AI Image" to create the final image.
+
+
+## API Endpoints
+
+### GET /api/qotd
+
+Generates a QOTD image based on the provided parameters.
+
+Query Parameters:
+- `date`: The date for the question (YYYY-MM-DD format)
+- `format`: Set to 'image' to receive an image response
+- `platform`: The target platform (instagram, facebook, or twitter)
+- `backgroundColor`: Hex color code for the background
+- `textColor`: Hex color code for the text
+- `accentColor`: Hex color code for accents
+- `borderColor`: Hex color code for the border
+- `question`: The question text
+- `choices`: Pipe-separated list of answer choices
+
+Response:
+- Content-Type: image/png
+- Body: The generated image file
+
+## Contributing
+
+We welcome contributions to the AI-Powered QOTD Image Generator! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear, descriptive messages.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the GitHub issue tracker.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+
+---
+
+Thank you for using the AI-Powered QOTD Image Generator! We hope this tool enhances your content creation process and engages your audience effectively.
